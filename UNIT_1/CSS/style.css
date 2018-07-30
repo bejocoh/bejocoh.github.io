@@ -4,4 +4,6 @@ body {
 
 h1, p {
 	color: white;
+	font-family: avenir, sans serif;
+	text-align: center;
 }

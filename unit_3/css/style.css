@@ -1,0 +1,73 @@
+body {
+	background: #FF0000;
+	font-family: avenir, sans-serif;
+	color: white;
+	text-align: center;
+}
+
+#topbar {
+	padding-top: 100px;
+	width: 630px;
+	display: inline-block;
+}
+
+#logo {
+	max-width: 250px;
+	max-height: 125px;
+	float: left;
+}
+
+#slogan {
+	float: left;
+	font-style: italic;
+	margin-top: 0;
+}
+
+.buttons {
+	float: right;
+	margin-top: 40px;
+	margin-left: 10px;
+	padding: 10px;
+	border: 2px solid white;
+}
+
+#scroller {
+	width: 630px;
+	height: 300px;
+	margin: auto;
+	display: inline-block;
+	overflow: scroll;
+	background: black;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+}
+
+#images {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#bottombar {
+	padding-bottom: 100px;
+	width: 630px;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#contact {
+	float: right;
+	padding: 10px;
+	border: 2px solid white;
+}
+
+#copyright {
+	float: left;
+	font-size: 10px;
+	margin-top: 15px
+
+}
