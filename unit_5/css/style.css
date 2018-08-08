@@ -13,6 +13,7 @@ header {
 	width: 630px;
 	display: inline-block;
 	margin: auto;
+	background-color: #FFED74;
 }
 
 header img {
@@ -32,6 +33,7 @@ nav {
 	margin-top: 40px;
 	margin-left: 10px;
 	padding: 10px;
+	background-color: #E8C66A;
 }
 
 main {
@@ -45,17 +47,19 @@ main {
 	margin: auto;
 	display: inline-block;
 	overflow: scroll;
-	background: black;
+	/*background: black;*/
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
 	position: relative;
 	left: -2em;
+	background-color: #FFE2B8;
 }
 
 #images {
 	padding-bottom: 5px;
 	display: flex;
 	flex-wrap: wrap;
+	background-color: #FFE2B8;
 }
 
 figure {
@@ -76,7 +80,7 @@ figure p {
 	text-transform: uppercase;
 }
 
-figure:hover figure p {
+figure:hover p {
 	visibility: visible;
 }
 
@@ -88,6 +92,7 @@ aside h2 {
 	font-style: italic;
 	margin: 0;
 	display: inline-block;
+	background-color: #FFC675;
 }
 
 a {
@@ -102,6 +107,7 @@ footer {
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #FF957E;
 }
 
 #contact {
