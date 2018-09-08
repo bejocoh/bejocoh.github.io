@@ -9,8 +9,8 @@ body {
 }
 
 header {
-	padding-top: 100px;
-	width: 630px;
+	padding-top: 10vh;
+	width: 55vw;
 	margin: auto;
 	margin-top: 0;
 	margin-bottom: 15px;
@@ -20,12 +20,13 @@ header img {
 	max-width: 200px;
 	max-height: 125px;
 	float: left;
-	background-color: black;
 }
 
 #slogan {
+	width: 100%;
 	font-style: italic;
 	margin-top: 0;
+	overflow: scroll;
 }
 
 nav {
@@ -40,29 +41,32 @@ nav:hover {
 }
 
 main {
-	width: 730px;
+	width: 65vw;
 	margin: auto;
 }
 
 main div {
-	width: 630px;
+	width: 55vw;
 	box-sizing: border-box;
 	border: 5px solid black;
 	height: 200px;
 	margin: auto;
 	margin-bottom: 20px;
 	background-color: white;
-	font-size: 3em;
+	font-size: 10vw;
+	line-height: 190px;
 	text-align: center;
 	color: black;
-	line-height: 1em;
+	vertical-align: middle;
 	font-family: 'Archivo Black', sans-serif;
-	font-size: 4em;
 	font-style: italic;
+	overflow: hidden;
+	position: relative;
+	left: -20px;
 }
 
 #scroller {
-	width: 630px;
+	width: 55vw;
 	height: 300px;
 	margin: auto;
 	overflow: scroll;
@@ -70,7 +74,7 @@ main div {
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
 	position: relative;
-	left: -22px;
+	left: -20px;
 }
 
 #images {
@@ -80,10 +84,10 @@ main div {
 }
 
 figure {
-	width: 200px;
-	height: 200px;
+	width: 31%;
+	height: 17vw;
 	background-color: white;
-	margin: 5px;
+	margin: 1%;
 }
 
 figure p {
@@ -105,9 +109,10 @@ figure:hover p {
 aside h2 {
 	float: left;
 	writing-mode: vertical-lr;
-	font-size: 2em;
+	font-size: 3vw;
 	font-style: italic;
 	margin: 0;
+
 }
 
 .clearfix:after {
@@ -126,7 +131,7 @@ a {
 
 footer {
 	padding-bottom: 100px;
-	width: 630px;
+	width: 55vw;
 	display: block;
 	margin-top: 20px;
 	margin-left: auto;
@@ -148,6 +153,14 @@ footer {
 	margin-top: 15px
 }
 
+@media only screen and (max-width: 950px) {
+	figure {
+		width: 48%;
+		height: 25vw;
+		margin: 1%;
+	}
+}
+
 /* use to calibrate for mobile screens*/
 
 @media only screen and (max-width: 740px) {
@@ -163,11 +176,17 @@ footer {
 
 	header {
 		margin-bottom: 10px;
+		position: fixed;
+		top: 0;
+		background-color: red;
+		height: 130px;
+		z-index: 99;
+		border-bottom: 2px solid black;
 	}
 
 	header, footer {
-		width: 96%;
-		padding: 0;
+		width: 94%;
+		padding: 0 3%;
 		margin: auto;
 	}
 
@@ -178,6 +197,7 @@ footer {
 	main {
 		width: 100%;
 		padding: 0;
+		margin-top: 130px;
 	}
 
 	main div {
@@ -185,10 +205,13 @@ footer {
 		margin: 1.5vw 0;
 		border: 0;
 		line-height: 3em;
+		font-size: 4em;
+		position: static;
 	}
 
 	#slogan {
-		font-size: 2.45vmin;
+		font-size: 2.2vw;
+		line-height: 15px;
 	}
 
 	header img {
@@ -236,9 +259,104 @@ footer {
 
 @media only screen and (max-width: 400px) {
 
-	#scroller {
+	body {
+		background-color: white;
+	}
+
+	header {
+		padding: 10px;
+		width: 50%;
+		margin-top: 7vh;
+		z-index: 99;
+		background-color: #FF0000;
+		position: fixed;
+		left: 50%;
+		transform: translate(-50%);
+		border-bottom: none;
+	}
+
+	header img {
+		max-width: 200px;
+		max-height: 125px;
+		width: 75%;
+		margin: 0 auto;
+		display: block;
+		float: none;
+		border-bottom: 2px solid white;
+	}
+
+	main {
+		height: 95vh;
+		overflow: scroll;
+		z-index: 10;
+		margin: 0;
+	}
+
+	main div {
+		writing-mode: vertical-lr;
+		font-size: 8em;
+		vertical-align: middle;
+		text-align: center;
+		height: 800px;
+		border-bottom: 2px solid black;
+		margin: 0;
+	}
+
+	nav {
+		display: inline-block;
+		margin: 0 7px;
+		padding: 10px 0 5px 0;
+		float: none;
+		}
+
+	nav:hover {
+		border-bottom: none;
+	}
+
+	#slogan {
 		display: none;
 	}
+	
+	#scroller {
+		margin: 0;
+	}
+
+	figure {
+		width: 100vw;
+		height: 100vw;
+		display: block;
+		margin: 0;
+		position: static;
+		padding: 0;
+		float: none;
+	}
+
+	figure p {
+		font-size: 3em;
+		line-height: 800%;
+	}
+
+	footer {
+		height: 40px;
+		width: 100%;
+		z-index: 80;
+		position: fixed;
+		bottom: 0;
+		background-color: red;
+		display: block;
+		margin-bottom: 0;
+	}
+
+	#copyright {
+		margin-left: 2vw;
+		line-height: 10px;
+	}
+
+	#contact {
+		margin-right: 7vw;
+		line-height: 20px;
+	}
+
 }
 
 /* <img src="images/square.jpg">
